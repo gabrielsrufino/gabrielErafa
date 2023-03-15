@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none
+    ;
+}
+
+body{
+    font-size: 100%;
+    background: linear-gradient(272.03deg, #FD96E0 3.21%, #85358C 100.07%);
+}
+
+.cabeçalho{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 12px 28px;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.cabeçalho-menu{
+    display: flex;
+    gap: 95px;
+    padding: 51px;
+}
+
+.cabeçalho-menu-item{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 24px;
+}
+
+.principal{
+    border-top: 0.4px solid white;
+    margin-bottom: 48px;
+   }
+
+.conteudo-principal{
+    margin-top: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.soneto-titulo{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+text-align: center;
+color: white;
+}
+
+.soneto{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    text-align: center;
+    color: white;
+    line-height: 30px;
+}
+
+.eu-e-rafa{
+    width: 580px;
+}
+
+@media screen and (max-width: 500px){
+
+    .logo{
+        display: flex;
+        justify-content: flex-start;
+        width: 69px;
+        height: 57px;
+    }
+    
+
+    .cabeçalho{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 24px 17px;
+        justify-content: space-between;
+}
+
+.cabeçalho-menu{
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+
+}
+.cabeçalho-menu-item{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 9.5px;
+
+}
+
+.principal{
+    border-top: 0.4px solid white;
+    margin-bottom: 48px;
+   }
+
+   .conteudo-principal{
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-around;
+   }
+
+   .texto{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.soneto{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    text-align: center;
+    color: white;
+    line-height: 12px;
+}
+
+.eu-e-rafa{
+    width: 386px;
+    height: 393px;
+}
+}

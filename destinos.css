@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none
+    ;
+}
+
+body{
+    font-size: 100%;
+    background: linear-gradient(272.03deg, #FD96E0 3.21%, #85358C 100.07%);
+}
+
+.cabeçalho{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 12px 28px;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.cabeçalho-menu{
+    display: flex;
+    gap: 95px;
+    padding: 51px;
+}
+
+.cabeçalho-menu-item{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 24px;
+}
+
+.principal{
+    border-top: 0.4px solid white;
+    margin-bottom: 48px;
+   }
+
+   .destinos{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        color: white;
+        font-size: 36px;
+   }
+
+   .gallery-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2vw;
+    padding: 0 2vw;
+    margin-top: 10px;
+}
+.gallery-items{
+    width: 340px;
+    height: 340px;
+    border: 10px solid #FFF;
+    box-shadow: 5px 5px 5px #0006;
+    flex-grow: 1;
+    transition: transform .5s linear;
+}
+.gallery-items img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-items:hover{
+    transform: scale(1.3);
+}
+
+   
+
+
+
+
+
+
+
+
+   @media screen and (max-width: 500px){
+
+    .logo{
+        display: flex;
+        justify-content: flex-start;
+        width: 69px;
+        height: 57px;
+    }
+    
+
+    .cabeçalho{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 24px 17px;
+        justify-content: space-between;
+}
+
+.cabeçalho-menu{
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+
+}
+.cabeçalho-menu-item{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 9.5px;
+
+}
+
+.principal{
+    border-top: 0.4px solid white;
+    margin-bottom: 48px;
+   }
+
+   
+
+
+
+
+}

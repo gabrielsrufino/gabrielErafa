@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none
+    ;
+}
+
+body{
+    font-size: 100%;
+    background: linear-gradient(272.03deg, #FD96E0 3.21%, #85358C 100.07%);
+}
+
+.cabeçalho{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 12px 28px;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.cabeçalho-menu{
+    display: flex;
+    gap: 95px;
+    padding: 51px;
+}
+
+.cabeçalho-menu-item{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 24px;
+}
+
+.principal{
+    border-top: 0.4px solid white;
+    margin-bottom: 48px;
+   }
+
+/*todo*/
+
+.conteudo {
+    margin: 0 auto;
+    width: 100%;;
+    max-width: 450px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: #ffffff;
+    padding: 55px;
+    border-radius: 12px;
+}
+
+.topo {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 35px;     
+}
+
+.topo input {
+    width: 280px;
+    padding: 15px;
+    border-radius: 12px;
+    border: 3px solid #85358C;
+    outline: none;
+    font-size: 1.2rem;
+    background: #af46b9;
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+.topo button {
+    width: 45px;
+    border-radius: 12px;
+    border: 3px solid #85358C;
+    background: #af46b9;
+    color: #FFF;
+    outline: none;
+}
+
+.topo button:hover {
+    background: #56225b;
+    cursor: pointer;
+}
+
+#listaTarefas {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#listaTarefas li {
+    padding: 20px;
+    background: #af46b9;
+    border: 3px solid #85358C;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.btnAcao {
+    border-radius: 20px;
+    border: 3px solid #6a2a70;
+    width: 38px;
+    height: 38px;
+    margin-right: 8px;
+    cursor: pointer;
+    background: #85358C;
+    color: #FFF;
+    outline: none;
+}
+
+.btnAcao:hover {
+    background: #56225b;
+}
+
+.textoTarefa {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 290px;
+    white-space: nowrap;
+}
+
+#janelaEdicao {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: #56225b;
+    border: 3px solid #441b48;
+    width: 415px;
+    border-radius: 12px;
+    z-index: 200;
+    display: none;
+}
+
+#janelaEdicao.abrir {
+    display: block !important;
+}
+
+#janelaEdicaoFundo {
+    position: fixed;
+    top: 0;
+    background-color: #000000d7;
+    bottom: 0;
+    left: 0;
+    opacity: 0.9;
+    z-index: 100;
+    right: 0;
+    display: none;
+}
+
+#janelaEdicaoFundo.abrir {
+   display: block !important;    
+}
+
+#janelaEdicaoBtnFechar {
+    position: absolute;
+    top: -25px;
+    right: -18px; 
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid #6a2a70;
+    background: #85358C;
+    color: #FFF;
+    outline: none;
+}
+
+form {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.frm-linha {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.frm-linha label {
+    margin-bottom: 7px;
+}
+
+.frm-linha input {
+    padding: 15px;
+    border-radius: 12px;
+    outline: none;
+    border: 1px solid #191818;
+    font-size: 1.2rem;
+    background: #85358C;
+    color: #FFF;
+}
+
+.frm-linha button {
+    background: #85358C;
+    border: 1px solid #191818;
+    padding: 7px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    color: #CCC;
+    cursor: pointer;
+    height: 50px;
+    font-size: 1.3rem;
+    outline: none;
+}
+
+.frm-linha button:hover {
+    background: #56225b;
+} 
+
+@media screen and (max-width: 500px){
+
+    .logo{
+        display: flex;
+        justify-content: flex-start;
+        width: 69px;
+        height: 57px;
+    }
+    
+
+    .cabeçalho{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 24px 17px;
+        justify-content: space-between;
+}
+
+.cabeçalho-menu{
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+
+}
+.cabeçalho-menu-item{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 9.5px;
+
+}
+
+.principal{
+    border-top: 0.4px solid white;
+    margin-bottom: 48px;
+   }
+
+   .topo input {
+    width: 150px;
+    padding: 15px;
+    border-radius: 12px;
+    border: 3px solid #85358C;
+    outline: none;
+    font-size: 1.2rem;
+    background: #af46b9;
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    color: white;
+   }
+
+   .conteudo {
+    margin: 0 auto;
+    width: 80%;;
+    max-width: 450px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: #ffffff;
+    padding: 55px;
+    border-radius: 12px;
+   }
+
+   .topo button {
+    width: 22.5px;
+    border-radius: 6px;
+    border: 3px solid #85358C;
+    background: #af46b9;
+    color: #FFF;
+    outline: none;
+   }
+
+   .btnAcao {
+    border-radius: 20px;
+    border: 3px solid #6a2a70;
+    width: 22px;
+    height: 22px;
+    margin-right: 8px;
+    cursor: pointer;
+    background: #85358C;
+    color: #FFF;
+    outline: none;
+   }
+
+   #listaTarefas li {
+    width: 190px;
+    height: 70px;
+    padding: 20px;
+    background: #af46b9;
+    border: 3px solid #85358C;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 11px;
+   }
+
+   #janelaEdicao {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: #56225b;
+    border: 3px solid #441b48;
+    width: 250px;
+    border-radius: 12px;
+    z-index: 200;
+    display: none;
+   }
+
+
+
+
+
+ 
+
+   
+
+
+
+
+}
